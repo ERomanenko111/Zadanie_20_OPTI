@@ -7,13 +7,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.EnableCaching;
-
 @Configuration
 @EnableCaching
 public class AppConfiguration {
+
     @Bean
     public RestTemplate getRestTemplate() {
         return new RestTemplate();
